@@ -19,3 +19,16 @@ after_success:
   - docker push mrl0co/multi-nginx
   - docker push mrl0co/multi-server
   - docker push mrl0co/multi-worker
+
+# deploy:
+#   provider: elesticbeanstalk
+#   redion: eu-west-1
+#   app: multi-docker
+#   env: MultiDocker_env
+#   bucket: asdasdasd
+#   bucket_path: docker-multi
+#   on:
+#     branch: master
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_access_key:
+#     secure: $AWS_SECRET_KEY
